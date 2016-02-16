@@ -1,0 +1,10 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zfs-auto-snap: @zfs-auto-snap_(frequent|hourly|daily)-[0-9-]{15}, [0-9] created, [0-9] destroyed, 0 warnings.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ minissdpd\[[0-9]+\]: method , don't know what to do$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ minissdpd\[[0-9]+\]: [0-9]+ new devices added$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [0-9-]+ bad udp checksums in [0-9-]+ packets$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: unexpected ICMP Echo Reply from [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPREQUEST for [.0-9]{7,15} from [:[:alnum:]]+ (\([\(\):._ [:alnum:]-]+ *\))? ?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([\(\)._ [:alnum:]-]+ *\))? ?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[iptables\]:
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[ip6tables\]:
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? nf_conntrack: falling back to vmalloc.$
