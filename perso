@@ -4,10 +4,17 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ minissdpd\[[0-9]+\]: device not found for removing : uuid:
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [0-9-]+ bad udp checksums in [0-9-]+ packets$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: unexpected ICMP Echo Reply from [.0-9]{7,15}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]{7,15} from [:[:alnum:]]+ (\([\(\):._ [:alnum:]-]+ *\))? ?via [._[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([\(\)._ [:alnum:]-]+ *\))? ?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ \([:._ [:alnum:]-]+\) via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]{7,15} (\([.0-9]{7,15}\) )?from [:[:alnum:]]+ (\([:._ [:alnum:]-]+\))? ?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._ [:alnum:]-]+\))? ?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]{7,15} to [:[:alnum:]]+ (\([._ [:alnum:]-]+\))? ?via [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[iptables\]:
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[ip6tables\]:
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? nf_conntrack: falling back to vmalloc.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? perf interrupt took too long \(\d+ > \d+\), lowering kernel\.perf_event_max_sample_rate to \d+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ avahi-daemon\[[0-9]+\]: Invalid response packet from host [.0-9]{7,15}\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snmpd\[[0-9]+\]: ipSystemStatsTable node ipSystemStatsOutFragOKs not implemented: skipping$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snmpd\[[0-9]+\]: Connection from UDP
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rngd\[[0-9]+\]: stats:
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ SNTP\[[0-9]+\]: sntp_client.c\([0-9]+\) [0-9]+ %% SNTP: system clock synchronized on [ :._[:alnum:]-]+. Indicates that SNTP has successfully synchronized the time of the box with the server.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ] ICMPv6 checksum failed \[[:[:xdigit:]]+ > [:[:xdigit:]]+\]$
